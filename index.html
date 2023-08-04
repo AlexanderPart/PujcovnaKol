@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <form id="myForm">
+            <h1>Půjčovna kol</h1>
+            <h3>Nabídka kol</h3>
+            <div class="Bikes">
+                <div class="bike">
+                    <img src="img/bikeChildImg.jpg" alt="">
+                    <div class="bikeText">
+                        <h4>Dětské kolo 300 Kč/den</h4>
+                        <label class="toggler-wrapper style-1" for="bikeChild">
+                            <input type="checkbox" id="bikeChild" value="300">
+                            <div class="toggler-slider">
+                                <div class="toggler-knob"></div>
+                            </div>
+                        </label>
+                        <input type="number" id="bikeChildNumber" class="inputNumberBox" min="0" max="99" value="0">
+                    </div>
+                </div>
+
+                <div class="bike">
+                    <img src="img/bikeCrossImg.jpg" alt="">
+                    <div class="bikeText">
+                        <h4>Horské kolo 500 Kč/den</h4>
+                        <label class="toggler-wrapper style-1" for="bikeCross">
+                            <input type="checkbox" id="bikeCross" value="500">
+                            <div class="toggler-slider">
+                                <div class="toggler-knob"></div>
+                              </div>
+                        </label>
+                        <input type="number" id="bikeCrossNumber" class="inputNumberBox" min="0" max="99" value="0">
+                    </div>
+                </div>
+                
+                <div class="bike">
+                    <img src="img/bikeRoadImg.jpg" alt="">
+                    <div class="bikeText">
+                        <h4>Silniční kolo 1500 Kč/den</h4>
+                        <label class="toggler-wrapper style-1" for="bikeRoad">
+                            <input type="checkbox" id="bikeRoad" value="1500">
+                            <div class="toggler-slider">
+                                <div class="toggler-knob"></div>
+                              </div>
+                        </label>
+                        <input type="number" id="bikeRoadNumber" class="inputNumberBox" min="0" max="99" value="0">
+                    </div>
+                </div>
+
+                <div class="bike">
+                    <img src="img/bikeGravelImg.jpg" alt="">
+                    <div class="bikeText">
+                        <h4>Gravel kolo 2500 Kč/den</h4>
+                        <label class="toggler-wrapper style-1" for="bikeGravel">
+                            <input type="checkbox" id="bikeGravel" value="2500">
+                            <div class="toggler-slider">
+                                <div class="toggler-knob"></div>
+                              </div>
+                        </label>
+                        <input type="number" id="bikeGravelNumber" class="inputNumberBox" min="0" max="99" value="0">
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column-1">
+                    <div class="choose">
+                        <legend>Počet dnů:</legend>
+                        <select name="" id="days">
+                            <option value="1">1 den</option>
+                            <option value="7">7 dní</option>
+                            <option value="14">14 dní</option>
+                            <option value="14">30 dní</option>
+                        </select><br>
+                    </div>
+                    
+                    <legend>Typ nosiče kol</legend>
+                    <input type="radio" id="withoutHolder" name="holder" checked>
+                    <label for="withoutHolder">Bez nosiče</label><br>
+        
+                    <input type="radio" id="holderRoof" name="holder">
+                    <label for="holderRoof">Střešní nosič (+ 5%)</label><br>
+            
+                    <input type="radio" id="holderRear" name="holder">
+                    <label for="holderRear">Nosiš na tažné (+ 10%)</label><br>
+                </div>
+                
+                <div class="column-2">
+                    <input type="text" placeholder="Váš Rozpočet" id="budget" class="textArea"><br>
+                    <input type="text" placeholder="Celkem" id="priceBox" class="textArea">
+                    <input type="button" value="Spočítat" id="calculate" class="btn"><br>
+                    <input type="text" id="message" class="textArea1"><br>
+                </div>
+                
+                <div class="column-3">
+                    <input type="email" placeholder="Zadejte email" id="email" class="email" required><br>
+                    <input type="submit" value="Odeslat" id="send" class="btn" disabled>
+                </div>
+            </div>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
